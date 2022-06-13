@@ -293,6 +293,22 @@ hr.bar {
   border: 1px solid #000;
 }
 .contact-feature {
+  border: 1px solid #000;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .contact-feature > div {
+  border: 1px solid #000;
+  height: 400px;
+  float: left;
+  width: 50%;
+}
+
+.contact-form {
+}
+
+.contact-info {
 }
