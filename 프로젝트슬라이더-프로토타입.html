@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      /* section project */
+      .project-inner {
+        height: 100%;
+        border: 1px solid #000;
+      }
+      .tabs {
+        border: 1px solid red;
+        height: 100%;
+        width: 300%;
+      }
+
+      .tab {
+        height: 100%;
+        width: 100%;
+        float: left;
+      }
+      .tab > div {
+        border: 1px solid #000;
+        height: 100%;
+        float: left;
+      }
+
+      .project-info {
+        width: 25%;
+      }
+
+      .project-photo {
+        width: 75%;
+      }
+      input[name="tabmenu"] {
+        display: none;
+      }
+
+      .btn {
+        border: 2px solid #000;
+        position: absolute;
+        left: 30;
+        bottom: 30px;
+      }
+      .btn label {
+        cursor: pointer;
+      }
+      input[id="tab1"]:checked ~ .btn label[for="tab1"] {
+        color: red;
+      }
+      input[id="tab2"]:checked ~ .btn label[for="tab2"] {
+        color: red;
+      }
+      input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project-inner">
+      <input type="radio" name="tabmenu" id="tab1" checked />
+      <input type="radio" name="tabmenu" id="tab2" />
+      <input type="radio" name="tabmenu" id="tab3" />
+      <div class="tabs">
+        <div class="tab">
+          <div class="project-info"></div>
+          <div class="project-photo"></div>
+        </div>
+        <div class="tab">
+          <div class="project-info"></div>
+          <div class="project-photo"></div>
+        </div>
+        <div class="tab">
+          <div class="project-info"></div>
+          <div class="project-photo"></div>
+        </div>
+        <div class="btn">
+          <label for="tab1">tab1</label>
+          <label for="tab2">tab2</label>
+          <label for="tab3">tab3</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

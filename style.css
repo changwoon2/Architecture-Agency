@@ -12,6 +12,7 @@
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -290,7 +291,7 @@ hr.bar {
 .contact-inner {
   background-color: #fff;
   height: 100%;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
 }
 .contact-feature {
   width: 70%;
@@ -300,22 +301,17 @@ hr.bar {
   transform: translate(-50%, -50%);
 }
 .contact-feature > div {
-  height: 400px;
   float: left;
   width: 50%;
-  padding: 20px;
+  padding: 40px;
 }
 
-.contact-form {
-}
 .contact-form h3 {
   font-size: 30px;
   font-weight: normal;
   margin: 0;
 }
 
-.send-box {
-}
 .send-box label {
   display: block;
   font-weight: bold;
@@ -365,5 +361,105 @@ hr.bar {
 .send-box button:hover {
   background-color: #000;
 }
-.contact-info {
+
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.contact-info ul li {
+  line-height: 2em;
+}
+
+.contact-info ul li:last-child {
+  color: #0088cc;
+}
+
+.contact-info p {
+  line-height: 1.5em;
+}
+
+/* plan */
+
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plan-feature > div {
+  height: 300px;
+  color: #bbb;
+}
+
+.plan-info > div {
+  float: left;
+}
+.plan-heading h2,
+.history-info h2 {
+  color: white;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 50px;
+}
+
+.plan-photo {
+  width: 30%;
+}
+
+.plan-photo img {
+  height: 270px;
+}
+
+.plan-heading hr.bar,
+.history-info hr.bar {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+
+.history-slider div h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+
+.history-slider div p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* slick css */
+
+.history-slider .slick-arrow {
+  display: none !important;
+}
+
+.history-slider .slick-dots li button::before {
+  color: #fff;
+  font-size: 40px;
+}
+
+.history-slider .slick-dots li {
+  margin: 0;
 }
