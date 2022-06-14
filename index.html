@@ -10,7 +10,10 @@
     <script src="js/velocity/velocity.ui.min.js"></script>
     <script src="js/velocity/main.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
-
+    <!-- slick.js -->
+    <script src="slick/slick.min.js"></script>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <title>Architecture-Agency</title>
     <!-- custom css & js -->
     <script src="custom.js"></script>
@@ -19,9 +22,9 @@
   </head>
   <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-  <body data-hijacking="on" data-animation="gallery">
+  <body data-hijacking="on" data-animation="rotate">
     <div class="container">
-      <section class="cd-section visible" id="Home">
+      <section class="cd-section" id="Home">
         <div>
           <div class="content">
             <img src="images/temp-section-01.jpg" />
@@ -68,10 +71,79 @@
         </div>
       </section>
 
-      <section class="cd-section" id="Plan">
+      <section class="cd-section visible" id="Plan">
         <div>
           <div class="content">
-            <img src="images/temp-section-04.jpg" />
+           <div class="plan-inner">
+            <div class="plan-feature">
+              <div class="plan-info">
+               <div class="plan-heading">
+                <h2>Planning<br>For the Next Project</h2>
+                <hr class="bar">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptatem praesentium neque quas aliquid, tempore doloremque corporis beatae perferendis fuga animi, perspiciatis pariatur at ut aperiam voluptatibus consequatur quam rem dolorum? Suscipit aut exercitationem iste pariatur eum nesciunt similique. Distinctio excepturi aperiam nulla, impedit ducimus reprehenderit magnam. Aliquam, maiores ducimus?
+                </p>
+               </div>
+               <div class="plan-photo">
+                <img src="images/plan-main-01.jpg">
+               </div>
+              </div>
+              <div class="history-info">
+                <h2>History</h2>
+                <hr class="bar">
+                <div class="history-slider">
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2013</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2014</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2015</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2016</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2017</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2018</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2019</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                  <div>
+                    <h4>The Project <br>of Architect for the <span>2020</span></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum consequuntur recusandae nulla dolorum velit ab rem! Necessitatibus, corporis. Incidunt!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
           </div>
         </div>
       </section>
@@ -164,7 +236,7 @@
             <div class="contact-inner">
               <div class="contact-feature">
                 <div class="contact-form">
-                  <h3><b>Contact</b>Us</h3>
+                  <h3><b>Contact</b> Us</h3>
                   <p>Feel free to ask for details, dont’save any questions.</p>
                   <form class="send-box">
                     <label>Email <span>*</span></label>
@@ -177,19 +249,19 @@
                   </form>
                 </div>
                 <div class="contact-info">
-                 <h4>Our<b>Office</b></h4>
+                 <h4>Our <b>Office</b></h4>
                  <ul>
                   <li>Address : Address: 309, New Cavendish St, EC1Y 3WK</li>
                   <li>Phone : 0800 214 5252</li>
                   <li>Email : designworks@designworks.com</li>
                  </ul>
-                 <h4>Business<b>Hours</b></h4>
+                 <h4>Business <b>Hours</b></h4>
                  <ul>
-                  <li>Monday - Friday : 9am to 5pm</li>
-                  <li>Saturday : 9am to 2pm</li>
-                  <li>Sunday : Closed</li>
+                  <li><i class="fa fa-clock-o"></i>Monday - Friday : 9am to 5pm</li>
+                  <li><i class="fa fa-clock-o"></i>Saturday : 9am to 2pm</li>
+                  <li><i class="fa fa-clock-o"></i>Sunday : Closed</li>
                  </ul>
-                 <h4>Get in<b>Touch</b></h4>
+                 <h4>Get in <b>Touch</b></h4>
                  <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil quod fugiat repudiandae corporis quis necessitatibus sed, quas impedit accusantium distinctio eveniet voluptates quisquam explicabo consequuntur iste veniam possimus iure ut inventore accusamus nulla. Nisi iusto aliquid dolorem quasi architecto.
                  </p>
