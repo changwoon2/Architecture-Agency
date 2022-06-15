@@ -24,7 +24,7 @@
 
   <body data-hijacking="on" data-animation="rotate">
     <div class="container">
-      <section class="cd-section" id="Home">
+      <section class="cd-section"  id="Home">
         <div>
           <div class="content">
             <img src="images/temp-section-01.jpg" />
@@ -63,15 +63,49 @@
       </div>
       </section>
 
-      <section class="cd-section" id="Project">
+      <section class="cd-section visible" id="Project">
         <div>
           <div class="content">
-            <img src="images/temp-section-03.jpg" />
+            <div class="project-inner">
+              <input type="radio" name="tabmenu" id="tab1" checked>
+              <input type="radio" name="tabmenu" id="tab2">
+              <input type="radio" name="tabmenu" id="tab3">
+              <div class="tabs">
+                <div class="tab">
+                  <div class="project-info">
+                    project-info
+                  </div>
+                  <div class="project-photo">
+                    <img src="images/project-main-01-02.jpg">
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="project-info">
+                    project-info
+                  </div>
+                  <div class="project-photo">
+                    <img src="images/project-main-01-03.jpg">
+                  </div>
+              </div>
+              <div class="tab">
+                <div class="project-info">
+                  project-info
+                </div>
+                <div class="project-photo">
+                  <img src="images/project-main-01-04.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="cd-section visible" id="Plan">
+      <section class="cd-section" id="Plan">
         <div>
           <div class="content">
            <div class="plan-inner">
