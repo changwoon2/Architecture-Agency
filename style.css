@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
@@ -108,6 +109,109 @@ header {
 
 .btn-hiring:active {
   transform: scale(0);
+}
+
+/* section Home */
+.home-heading {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.home-inner::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: overlay 1s 2s ease-in-out both;
+}
+.home-heading span {
+  display: block;
+  font-size: 115px;
+  color: #fff;
+  font-weight: 600;
+  display: none;
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    width: 0;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes opacity-images {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.home-inner {
+  background-color: #fff;
+  height: 100%;
+}
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2em;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: slideup 3s linear;
+  animation-fill-mode: both;
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+}
+.welcome-text span .fa {
+  color: crimson;
+}
+
+.opacity-images {
+  background: url(images/section-bg-01.jpg) no-repeat center center;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  animation: opacity-images 1s 2.5s ease-in both;
 }
 /* Section about */
 .about-inner {
@@ -386,7 +490,7 @@ hr.bar {
   height: 100%;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
 }
 .project-info {
   width: 25%;
@@ -398,12 +502,11 @@ hr.bar {
 }
 .tab {
   height: 100%;
-  border: 1px solid red;
+
   float: left;
   width: 33.333333%;
 }
 .tab > div {
-  border: 1px solid #000;
   height: 100%;
   float: left;
 }
@@ -444,7 +547,23 @@ input[name="tabmenu"] {
   top: -6px;
   transition: 0.3s;
 }
-input[id="tab1"]:checked ~ .btn label[for="tab1"] {
+
+.btn label:hover:before {
+  border: 1px solid #bbb;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"]:before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]:before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]:before {
+  border: 1px solid #aaa;
+}
+
+input[id="tab3"]:checked
+  ~ .btn
+  label[for="tab3"]:before
+  input[id="tab1"]:checked
+  ~ .btn
+  label[for="tab1"] {
   color: red;
 }
 input[id="tab2"]:checked ~ .btn label[for="tab2"] {
@@ -463,6 +582,77 @@ input[id="tab3"]:checked ~ .tabs {
   margin-left: -200%;
 }
 
+/* project info */
+.project-info {
+  padding: 50px;
+  position: relative;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.project-info ul {
+  line-height: 2em;
+}
+.project-info ul li:before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  margin-bottom: 50px;
+}
+.detail div {
+  display: inline-block;
+  text-align: center;
+  width: 32.5%;
+  color: #999;
+}
+.detail div span {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+}
+.view-project {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px;
+  transition: 0.5s;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.view-project:hover {
+  background-color: #000;
+}
+
+.view-project .fa {
+  transition: 0.5s;
+}
+
+.view-project:hover .fa {
+  margin-left: 30px;
+}
+
+.project-info::before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
 /* plan */
 
 .plan-inner {
