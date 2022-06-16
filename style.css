@@ -754,3 +754,94 @@ input[id="tab3"]:checked ~ .tabs {
 .history-slider .slick-dots li {
   margin: 0;
 }
+
+/* subpage hiring */
+
+.model {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header-inner {
+  width: 95%;
+  margin: auto;
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 16px;
+}
+
+.hiring-main {
+  height: 600px;
+  position: relative;
+}
+.hiring-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hiring-heading span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+.hiring-heading span:before,
+.hiring-heading span:after {
+  content: "";
+  height: 2px;
+  background-color: #000;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+}
+.hiring-heading span:before {
+  right: 120%;
+}
+.hiring-heading span:after {
+  left: 120%;
+}
+.hiring-heading h1 {
+  font-size: 100px;
+  font-weight: 200;
+  margin: 0;
+  margin-top: 40px;
+}
+.hiring-info {
+  overflow: hidden;
+}
+.hiring-info > div {
+  border: 1px solid #000;
+  float: left;
+  width: 50%;
+  height: 450px;
+}
+.center-parent {
+  position: relative;
+}
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.center-child h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.center-child p {
+  font-size: 20px;
+}
+
+.photo {
+  background: url(images/hiring-main-01-01.jpg) no-repeat center center;
+  background-size: cover;
+}
