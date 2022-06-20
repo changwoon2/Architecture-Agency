@@ -817,7 +817,6 @@ input[id="tab3"]:checked ~ .tabs {
   overflow: hidden;
 }
 .hiring-info > div {
-  border: 1px solid #000;
   float: left;
   width: 50%;
   height: 450px;
@@ -839,9 +838,33 @@ input[id="tab3"]:checked ~ .tabs {
 
 .center-child p {
   font-size: 20px;
+  font-weight: 300;
 }
 
-.photo {
-  background: url(images/hiring-main-01-01.jpg) no-repeat center center;
-  background-size: cover;
+.photo img {
+  width: 100%;
+}
+
+.hiring-slogan {
+  padding: 100px 0;
+}
+
+.hiring-slogan p {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.hiring-slogan p:before {
+  content: ",,";
+  font-family: "Overpass", sans-serif;
+  font-size: 200px;
+  position: absolute;
+  color: #ddd;
+  transform: rotate(180deg);
+  top: -82px;
+  left: -35px;
 }
