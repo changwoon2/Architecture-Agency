@@ -350,8 +350,10 @@ hr.bar {
 .location-inner {
   background: url(images/background-location.jpg) no-repeat center center;
   height: 100%;
+  position: relative;
 }
 .location-inner::before {
+  position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.85);
   width: 100%;
