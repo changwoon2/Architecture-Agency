@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-  /* html {
-    scroll-behavior: smooth;
-  } */
   .cd-section {
     height: auto;
   }
@@ -117,4 +114,165 @@
     right: 20px;
     bottom: 20px;
   }
+}
+.cd-vertical-nav {
+  display: none;
+}
+
+.home-inner {
+  height: 100vh;
+}
+
+.welcome-text {
+  transform: translate(-50%, -50%) scale(0.7);
+  width: 100%;
+}
+
+.home-heading {
+  left: 20px;
+}
+
+.home-heading span {
+  font-size: 50px;
+}
+
+/* section about */
+
+.about-inner {
+  height: auto;
+  padding: 20px;
+  background: #0dace3;
+}
+.about-items {
+  width: 100%;
+  position: static;
+  margin-left: 0;
+  transform: none;
+  text-align: center;
+}
+
+.item img {
+  float: none;
+}
+
+/* section plan */
+.plan-inner {
+  height: auto;
+  padding: 20px;
+}
+.plan-feature {
+  width: 100%;
+  position: static;
+  transform: none;
+}
+
+.plan-feature > div {
+  height: auto;
+}
+.plan-info > div {
+  float: none;
+  width: 100%;
+}
+.plan-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.plan-heading {
+  padding-right: 0;
+}
+
+.plan-info {
+  margin-bottom: 40px;
+}
+
+/* section awards */
+
+.awards-inner {
+  height: auto;
+}
+
+.awards-inner > div {
+  float: none;
+  width: 100%;
+}
+.about-heading,
+.victory-jump img {
+  position: static;
+  transform: none;
+  padding: 40px 20px;
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.victory-jump {
+  text-align: center;
+}
+
+/* section Location */
+.location-inner {
+  height: auto;
+}
+
+.feature {
+  width: 100%;
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+.feature > div {
+  float: none;
+  width: 100%;
+  padding: 20px;
+}
+
+/* section contact */
+.contact-inner {
+  height: auto;
+}
+
+.contact-feature {
+  width: 100%;
+  position: static;
+  transform: none;
+}
+
+.contact-feature > div {
+  float: none;
+  width: 100%;
+}
+
+/* section project */
+
+.project-inner {
+  height: auto;
+  border: none;
+}
+
+.tab > div {
+  font: none;
+  width: 100%;
+}
+
+.view-project {
+  width: 100%;
+}
+
+.project-info {
+  padding: 20px;
+}
+.project-info p {
+  position: relative;
+}
+.detail div {
+  font-size: 13px;
+}
+
+.btn {
+  width: 100%;
+  bottom: 10px;
 }
