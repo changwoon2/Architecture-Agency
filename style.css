@@ -748,13 +748,13 @@ input[id="tab3"]:checked ~ .tabs {
   display: none !important;
 }
 
-.history-slider .slick-dots li button::before {
+.history-slider .slick-dots li button:before {
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .history-slider .slick-dots li {
-  margin: 0;
+  margin: 5px;
 }
 
 /* sub page hiring */
