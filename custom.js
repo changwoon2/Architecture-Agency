@@ -25,7 +25,7 @@ $(function () {
     infinite: false,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
